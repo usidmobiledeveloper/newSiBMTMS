@@ -1,0 +1,28 @@
+# ninja log v5
+8	28	0	clean	f1edf0971dd3cfc3
+1	3009	636007523	CMakeFiles/native-lib.dir/native-lib.cpp.o	2312d3e60f6356ea
+3036	3692	636007524	C:/WORKSPACE/M-BMT/SiBMT/Mobile BMT - PETA/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnative-lib.so	64c3a49c430be132
+0	11	0	clean	f1edf0971dd3cfc3
+0	11	0	clean	f1edf0971dd3cfc3
+0	11	0	clean	f1edf0971dd3cfc3
+0	10	0	clean	f1edf0971dd3cfc3
+0	9	0	clean	f1edf0971dd3cfc3
+0	11	0	clean	f1edf0971dd3cfc3
+0	9	0	clean	f1edf0971dd3cfc3
+0	8	0	clean	f1edf0971dd3cfc3
+0	8	0	clean	f1edf0971dd3cfc3
+1	10	0	clean	f1edf0971dd3cfc3
+0	8	0	clean	f1edf0971dd3cfc3
+1	10	0	clean	f1edf0971dd3cfc3
+1	9	0	clean	f1edf0971dd3cfc3
+0	12	0	clean	f1edf0971dd3cfc3
+0	9	0	clean	f1edf0971dd3cfc3
+0	8	0	clean	f1edf0971dd3cfc3
+0	8	0	clean	f1edf0971dd3cfc3
+0	10	0	clean	f1edf0971dd3cfc3
+0	12	0	clean	f1edf0971dd3cfc3
+1	11	0	clean	f1edf0971dd3cfc3
+0	10	0	clean	f1edf0971dd3cfc3
+0	10	0	clean	f1edf0971dd3cfc3
+3	702	641216145	CMakeFiles/native-lib.dir/native-lib.cpp.o	2312d3e60f6356ea
+702	857	641216146	C:/WORKSPACE/M-BMT/SiBMT/Mobile BMT - PETA/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnative-lib.so	64c3a49c430be132

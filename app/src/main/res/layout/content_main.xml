@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".unused.UnusedMainLamaActivity"
+    tools:showIn="@layout/app_bar_main2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/density_8_"
+                    android:background="@drawable/ic_user"
+                    app:civ_border_color="@android:color/darker_gray"
+                    app:civ_border_width="@dimen/density_4" />
+
+                <TextView
+                    android:id="@+id/fakun_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/density_8_"
+                    android:text="@string/namapln"
+                    android:textSize="@dimen/text_16_"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fakun_telp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/density_8_"
+                    android:text="@string/telepon"
+                    android:textSize="@dimen/text_14_" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fakun_telp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fakun_tapviewva"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Tampilkan VA"
+                        android:textSize="@dimen/text_16_"
+                        android:textStyle="bold" />
+
+                    <ProgressBar
+                        android:id="@+id/fakun_pbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_va"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/fakun_va"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:padding="4dp"
+                            android:text="VA"
+                            android:textSize="@dimen/text_16_"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/fakun_btnsalinva"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/ic_salin_token" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/white"
+        app:itemIconTint="@drawable/nav_selector"
+        app:itemTextColor="@drawable/nav_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

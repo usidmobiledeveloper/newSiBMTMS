@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.usid.upay.activity.MainActivity">
+
+    <item
+        android:id="@+id/action_notif"
+        android:icon="@drawable/ic_notif"
+        android:orderInCategory="100"
+        android:title="Notifications"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:visible="false"
+        android:icon="@drawable/ic_setting"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="always" />
+</menu>

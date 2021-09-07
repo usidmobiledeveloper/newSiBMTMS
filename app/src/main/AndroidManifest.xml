@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.usid.mobilebmt.mandirisejahtera">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".MultidexApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup"
+        tools:targetApi="q">
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ControllerActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--
+ <activity
+             android:name=".activityAdmin.NewScanActivity"
+             android:label="SCAN"
+             android:screenOrientation="portrait"
+             android:theme="@style/AppTheme.NoActionBar"
+             android:windowSoftInputMode="adjustPan">
+             <meta-data
+                 android:name="android.support.PARENT_ACTIVITY"
+                 android:value=".NewMainActivity" />
+         </activity>
+        -->
+        <activity
+            android:name=".registrasi.LupaPin"
+            android:label="Lupa PIN"
+            android:screenOrientation="portrait" />
+        <!--
+ <activity
+            android:name=".registrasi.RegistrasiLamaActivity"
+            android:label="@string/app_register"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".registrasi.AktivasiActivity"
+            android:label="@string/app_aktifasi"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".registrasi.BaruPin"
+            android:label="Verifikasi dan Ubah PIN"
+            android:screenOrientation="portrait">
+
+            <!--sementara-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.SplashActivity" />
+        </activity>
+
+        <activity
+            android:name=".registrasi.LupaPin"
+            android:label="Lupa PIN"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".registrasi.Registrasi2Activity"
+            android:label="@string/app_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".registrasi.PreRegistrasiActivity"
+            android:label="@string/pre_regsitrasi"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".dashboard.beranda.InfoMutasi"
+            android:label="@string/infomutasi"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialThemeMutasi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.riwayat.RiwayatViewActivity"
+            android:label="Riwayat"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.beranda.mutasipembiayaan.MutasiPembiayaan"
+            android:label="Mutasi Pembiayaan"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboard.beranda.InfoMutasi" />
+        </activity>
+        <activity
+            android:name=".dashboard.beranda.mutasisimpanan.MutasiSimpanan"
+            android:label="Mutasi Simpanan"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboard.beranda.InfoMutasi" />
+        </activity>
+        <activity
+            android:name=".dashboard.akun.AboutTentang"
+            android:label="@string/about"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.akun.AkunDetailActivity"
+            android:label="@string/about"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.akun.InboxList"
+            android:label="@string/inbox"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.akun.Inbox"
+            android:label="@string/inboxdetail"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.dashboard.akun.InboxList" />
+        </activity>
+        <activity
+            android:name=".dashboard.akun.GantiPin"
+            android:label="@string/gantipin"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.beranda.transfer.AntarRekening"
+            android:label="@string/tv_transfer_judul"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.beranda.transfer.AntarBank"
+            android:label="@string/tv_transfer_antarbank"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.akun.ForwardSMS"
+            android:label="@string/ForwardSMS"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.dashboard.akun.InboxList" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.donasi.Donasi"
+            android:label="@string/donasi"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.beranda.transfer.DaftarRekening"
+            android:label="@string/daftartrf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.beranda.transfer.DaftarAntarBank"
+            android:label="@string/daftartrfab"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.transaksi.pembelian.DaftarPulsa"
+            android:label="@string/daftarpulsa"
+            android:screenOrientation="portrait" />
+        <!--
+<activity
+            android:name="com.usid.mobilebmt.mandirisejahtera.dashboard.transaksi.donasi.DaftarDonaturNPWZ"
+            android:label="@string/daftardonatur"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name=".dashboard.transaksi.pembelian.DaftarPLNPembelian"
+            android:label="@string/daftarplnpra"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.DaftarPLNPembayaran"
+            android:label="@string/daftarplnpasca"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.DaftarPDAMPembayaran"
+            android:label="@string/daftarPDAM"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.DaftarTELKOMPembayaran"
+            android:label="@string/daftarTELKOM"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.beranda.content.KalkulatorZakat"
+            android:label="@string/kalkulator"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.beranda.content.InfoBiaya"
+            android:label="@string/biaya"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".InfoActivity2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".dashboard.beranda.content.KantorLayanan"
+            android:label="@string/lokasi"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.PLNpembayaran"
+            android:label="@string/listrik"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembelian.PLNpembelian"
+            android:label="@string/tokenpln"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.PLNpembayaranSukses"
+            android:label="@string/listrik"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.dashboard.transaksi.pembayaran.PLNpembayaran" />
+        </activity>
+
+        <activity
+            android:name=".dashboard.SoonActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembelian.PulsaPembelian"
+            android:label="@string/pulsaseluler"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.TelkomPembayaran"
+            android:label="@string/telepon"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.TelkomPembayaranSukses"
+            android:label="@string/telepon"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.dashboard.transaksi.pembayaran.TelkomPembayaran" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.PDAMpembayaran"
+            android:label="@string/pdam"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.PDAMpembayaranSukses"
+            android:label="@string/pdam"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.dashboard.transaksi.pembayaran.PDAMpembayaran" />
+        </activity>
+        <activity
+            android:name=".notifications.NotificationsInfoActivity"
+            android:label="@string/app_info_notifications"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <!--
+ <activity
+            android:name="com.usid.mobilebmt.mandirisejahtera.dashboard.transaksi.donasi.DonaturLazTetapActivity"
+            android:label="@string/donasi_tetap"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        -->
+        <activity
+            android:name=".dashboard.beranda.content.ProdukActivity"
+            android:label="@string/produk_"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.beranda.content.PromoActivity"
+            android:label="@string/promo_"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.akun.ContactUsActivity"
+            android:label="@string/contact"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".dashboard.beranda.ViewImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:theme="@style/Widget.CropImageView" />
+        <!--
+  <activity
+            android:name=".unused.NewTransaksiActivity"
+            android:label="Transaksi"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name=".NewMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".dashboard.transaksi.pembelian.DaftarEToll"
+            android:label="@string/daftar_etoll"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.transaksi.pembelian.ETollPembelian"
+            android:label="@string/e_toll"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.BPJSpembayaran"
+            android:label="@string/bpjs"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.BPJSpembayaranSukses"
+            android:label="@string/bpjs"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.dashboard.transaksi.pembayaran.BPJSpembayaran" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.DaftarBPJSPembayaran"
+            android:label="@string/daftar_bpjs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.transaksi.pembelian.DaftarUang"
+            android:label="@string/daftar_uang"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.transaksi.pembelian.UangPembelian"
+            android:label="@string/uang"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.scan.QRProfileActivity"
+            android:label="QR Profile"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.scan.ZoomBarcodeActivity"
+            android:theme="@style/AppCompatDialogTheme" />
+        <activity
+            android:name=".dashboard.scan.ZoomQRActivity"
+            android:theme="@style/AppCompatDialogTheme" />
+        <activity
+            android:name=".dashboard.scan.ScanActivity"
+            android:label="SCAN"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.DaftarMultifinancePembayaran"
+            android:label="@string/daftarMultifinance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.MultifinancePembayaran"
+            android:label="@string/multifinance"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.NewMainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembayaran.MultifinancePembayaranSukses"
+            android:label="@string/multifinance"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.usid.mobilebmt.mandirisejahtera.dashboard.transaksi.pembayaran.MultifinancePembayaran" />
+        </activity>
+
+        <activity
+            android:name=".dashboard.transaksi.donasi.DonasiSukses"
+            android:label="Donasi Sukses"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".dashboard.beranda.transfer.AntarRekeningSukses"
+            android:label="@string/transantarrek"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboard.beranda.transfer.AntarRekening" />
+        </activity>
+
+        <activity
+            android:name=".dashboard.beranda.transfer.AntarBankSukses"
+            android:label="@string/transferbank"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboard.beranda.transfer.AntarBank" />
+        </activity>
+        <activity
+            android:name=".dashboard.transaksi.pembelian.PLNpembelianSukses"
+            android:label="@string/tokenpln"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboard.transaksi.pembelian.PLNpembelian" />
+        </activity>
+
+        <activity
+            android:name=".dashboard.transaksi.pembelian.PembelianSukses"
+            android:label="Pembelian Sukses"
+            android:screenOrientation="portrait" />
+
+        <!-- ayik baru -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_notif" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service android:name=".notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- [END firebase_service] -->
+        <service
+            android:name=".notification.MyJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service android:name=".notifications.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".notification.NotificationReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

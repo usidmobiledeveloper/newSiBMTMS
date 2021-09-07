@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.usid.mobilebmt.mandirisejahtera.registrasi.PreRegistrasiActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="@dimen/density_64_">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/title_pre_1"
+                android:textSize="@dimen/text_18_"
+                android:textStyle="bold" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/density_margin_text"
+                android:layout_marginLeft="@dimen/density_margin_text"
+                android:layout_marginEnd="@dimen/density_8_"
+                android:layout_marginRight="@dimen/density_8_"
+                android:text="@string/text_pre_1"
+                android:textSize="@dimen/text_16_" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/density_8_"
+                android:gravity="start"
+                android:text="@string/title_pre_2"
+                android:textSize="@dimen/text_18_"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/density_margin_text"
+                android:layout_marginLeft="@dimen/density_margin_text"
+                android:layout_marginEnd="@dimen/density_8_"
+                android:layout_marginRight="@dimen/density_8_">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/density_margin_text"
+                    android:layout_marginRight="@dimen/density_margin_text"
+                    android:text="@string/satu" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="@string/text_pre_2_1"
+                    android:textSize="@dimen/text_16_" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/density_margin_text"
+                android:layout_marginLeft="@dimen/density_margin_text"
+                android:layout_marginEnd="@dimen/density_8_"
+                android:layout_marginRight="@dimen/density_8_">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/density_margin_text"
+                    android:layout_marginRight="@dimen/density_margin_text"
+                    android:text="@string/dua" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="@string/text_pre_2_2"
+                    android:textSize="@dimen/text_16_" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/density_margin_text"
+                android:layout_marginLeft="@dimen/density_margin_text"
+                android:layout_marginEnd="@dimen/density_8_"
+                android:layout_marginRight="@dimen/density_8_">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/density_margin_text"
+                    android:layout_marginRight="@dimen/density_margin_text"
+                    android:text="@string/tiga" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="@string/text_pre_2_3"
+                    android:textSize="@dimen/text_16_" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/density_margin_text"
+                android:layout_marginLeft="@dimen/density_margin_text"
+                android:layout_marginEnd="@dimen/density_8_"
+                android:layout_marginRight="@dimen/density_8_">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/density_margin_text"
+                    android:layout_marginRight="@dimen/density_margin_text"
+                    android:text="@string/empat" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="@string/text_pre_2_4"
+                    android:textSize="@dimen/text_16_" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/density_margin_text"
+                android:layout_marginLeft="@dimen/density_margin_text"
+                android:layout_marginEnd="@dimen/density_8_"
+                android:layout_marginRight="@dimen/density_8_">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/density_margin_text"
+                    android:layout_marginRight="@dimen/density_margin_text"
+                    android:text="@string/lima" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="@string/text_pre_2_5"
+                    android:textSize="@dimen/text_16_" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/density_margin_text"
+                android:layout_marginLeft="@dimen/density_margin_text"
+                android:layout_marginEnd="@dimen/density_8_"
+                android:layout_marginRight="@dimen/density_8_">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/density_margin_text"
+                    android:layout_marginRight="@dimen/density_margin_text"
+                    android:text="@string/enam" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="@string/text_pre_2_6"
+                    android:textSize="@dimen/text_16_" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/density_margin_text"
+                android:layout_marginLeft="@dimen/density_margin_text"
+                android:layout_marginEnd="@dimen/density_8_"
+                android:layout_marginRight="@dimen/density_8_">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/density_margin_text"
+                    android:layout_marginRight="@dimen/density_margin_text"
+                    android:text="@string/tujuh" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="@string/text_pre_2_7"
+                    android:textSize="@dimen/text_16_" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/density_8_"
+                android:gravity="start"
+                android:text="@string/title_pre_3"
+                android:textSize="@dimen/text_18_"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/density_margin_text"
+                android:layout_marginLeft="@dimen/density_margin_text"
+                android:layout_marginEnd="@dimen/density_8_"
+                android:layout_marginRight="@dimen/density_8_">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/density_margin_text"
+                    android:layout_marginRight="@dimen/density_margin_text"
+                    android:text="@string/satu" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="@string/text_pre_3_1"
+                    android:textSize="@dimen/text_16_" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/density_margin_text"
+                android:layout_marginLeft="@dimen/density_margin_text"
+                android:layout_marginEnd="@dimen/density_8_"
+                android:layout_marginRight="@dimen/density_8_">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/density_margin_text"
+                    android:layout_marginRight="@dimen/density_margin_text"
+                    android:text="@string/dua" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="@string/text_pre_3_2"
+                    android:textSize="@dimen/text_16_" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/density_margin_text"
+                android:layout_marginLeft="@dimen/density_margin_text"
+                android:layout_marginEnd="@dimen/density_8_"
+                android:layout_marginRight="@dimen/density_8_">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/density_margin_text"
+                    android:layout_marginRight="@dimen/density_margin_text"
+                    android:text="@string/tiga" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="@string/text_pre_3_3"
+                    android:textSize="@dimen/text_16_" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/density_margin_text"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_batal"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/density_8_"
+            android:layout_marginRight="@dimen/density_8_"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_cancel"
+            android:text="@string/batal"
+            android:textColor="@color/colorButtonNotPressed"/>
+
+        <Button
+            android:id="@+id/btn_setuju"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/density_8_"
+            android:layout_marginLeft="@dimen/density_8_"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_small"
+            android:text="@string/setuju"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

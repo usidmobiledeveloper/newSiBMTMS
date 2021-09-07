@@ -1,0 +1,602 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_"
+    android:paddingBottom="@dimen/density_8_">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_64"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/density_8_"
+                    android:layout_marginLeft="@dimen/density_8_"
+                    android:layout_marginTop="@dimen/density_8_"
+                    android:layout_marginEnd="@dimen/density_8_"
+                    android:layout_marginRight="@dimen/density_8_"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/density_4"
+                            android:gravity="left"
+                            android:paddingTop="@dimen/density_1"
+                            android:text="TRANSFER"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cv_antarrekening"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/density_1"
+                                android:layout_marginRight="@dimen/density_1"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/density_16">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        app:srcCompat="@drawable/ic_antar_rek" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/density_8_"
+                                        android:gravity="center"
+                                        android:text="Antar Rekening"
+                                        android:textSize="@dimen/text_14_" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cv_antarbmt"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/density_1"
+                                android:layout_marginLeft="@dimen/density_1"
+                                android:layout_marginEnd="@dimen/density_1"
+                                android:layout_marginRight="@dimen/density_1"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/density_16_">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        app:srcCompat="@drawable/ic_antar_bmt" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/density_8_"
+                                        android:gravity="center"
+                                        android:text="Antar BMT"
+                                        android:textSize="@dimen/text_14_" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cv_antarbank"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/density_1"
+                                android:layout_marginLeft="@dimen/density_1"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/density_16_">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        app:srcCompat="@drawable/ic_antar_bank" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/density_8_"
+                                        android:gravity="center"
+                                        android:text="Antar Bank\n"
+                                        android:textSize="@dimen/text_14_" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/middle"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/density_8_"
+                        android:layout_marginLeft="@dimen/density_8_"
+                        android:layout_marginTop="@dimen/density_8_"
+                        android:layout_marginBottom="@dimen/density_4"
+                        android:text="INFORMASI" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/density_8_"
+                        android:layout_marginLeft="@dimen/density_8_"
+                        android:layout_marginEnd="@dimen/density_8_"
+                        android:layout_marginRight="@dimen/density_8_"
+                        android:layout_marginBottom="@dimen/density_1"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_saldo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/density_1"
+                            android:layout_marginRight="@dimen/density_1"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/density_8_"
+                                android:orientation="vertical"
+                                android:padding="@dimen/density_8_">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    app:srcCompat="@drawable/ic_saldo" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/density_8_"
+                                    android:gravity="center"
+                                    android:text="Saldo\n"
+                                    android:textSize="@dimen/text_14_" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_mutasi"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/density_1"
+                            android:layout_marginLeft="@dimen/density_1"
+                            android:layout_marginEnd="@dimen/density_1"
+                            android:layout_marginRight="@dimen/density_1"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/density_8_"
+                                android:orientation="vertical"
+                                android:padding="@dimen/density_8_">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    app:srcCompat="@drawable/ic_mutasi" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/density_8_"
+                                    android:gravity="center"
+                                    android:text="Mutasi\n"
+                                    android:textSize="@dimen/text_14_" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_mda"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/density_1"
+                            android:layout_marginLeft="@dimen/density_1"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/density_8_"
+                                android:orientation="vertical"
+                                android:padding="@dimen/density_8_">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    app:srcCompat="@drawable/ic_mda" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/density_8_"
+                                    android:gravity="center"
+                                    android:maxLines="2"
+                                    android:text="MDA Berjangka\n"
+                                    android:textSize="@dimen/text_14_" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/density_8_"
+                        android:layout_marginLeft="@dimen/density_8_"
+                        android:layout_marginTop="@dimen/density_1"
+                        android:layout_marginEnd="@dimen/density_8_"
+                        android:layout_marginRight="@dimen/density_8_"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_pembiayaan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/density_1"
+                            android:layout_marginRight="@dimen/density_1"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/density_8_"
+                                android:orientation="vertical"
+                                android:padding="@dimen/density_8_">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    app:srcCompat="@drawable/ic_pembiayaan" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/density_8_"
+                                    android:gravity="center"
+                                    android:maxLines="2"
+                                    android:text="Pembiayaan\n"
+                                    android:textSize="@dimen/text_14_" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_simpanan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/density_1"
+                            android:layout_marginLeft="@dimen/density_1"
+                            android:layout_marginEnd="@dimen/density_1"
+                            android:layout_marginRight="@dimen/density_1"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/density_8_"
+                                android:orientation="vertical"
+                                android:padding="@dimen/density_8_">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    app:srcCompat="@drawable/ic_simpanan" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/density_8_"
+                                    android:gravity="center"
+                                    android:text="Simpanan\n"
+                                    android:textSize="@dimen/text_14_" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_infobiaya"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/density_1"
+                            android:layout_marginLeft="@dimen/density_1"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/density_8_"
+                                android:orientation="vertical"
+                                android:padding="@dimen/density_8_">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    app:srcCompat="@drawable/ic_biaya" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/density_8_"
+                                    android:gravity="center"
+                                    android:text="Info Biaya\n"
+                                    android:textSize="@dimen/text_14_" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/density_8_"
+                        android:layout_marginLeft="@dimen/density_8_"
+                        android:layout_marginTop="@dimen/density_2"
+                        android:layout_marginEnd="@dimen/density_8_"
+                        android:layout_marginRight="@dimen/density_8_"
+
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_kantor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/density_1"
+                            android:layout_marginRight="@dimen/density_1"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/density_8_"
+                                android:orientation="vertical"
+                                android:padding="@dimen/density_8_">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    app:srcCompat="@drawable/ic_lokasi" />
+
+                                <TextView
+                                    android:maxLines="2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/density_8_"
+                                    android:gravity="center"
+                                    android:text="@string/kantor_n"
+                                    android:textSize="@dimen/text_14_" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_produk"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/density_1"
+                            android:layout_marginLeft="@dimen/density_1"
+                            android:layout_marginEnd="@dimen/density_1"
+                            android:layout_marginRight="@dimen/density_1"
+                            android:layout_weight="1"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/density_8_"
+                                android:orientation="vertical"
+                                android:padding="@dimen/density_8_">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    app:srcCompat="@drawable/ic_produk" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/density_8_"
+                                    android:gravity="center"
+                                    android:text="@string/produk_"
+                                    android:textSize="@dimen/text_14_" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_promo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/density_1"
+                            android:layout_marginLeft="@dimen/density_1"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/density_8_"
+                                android:orientation="vertical"
+                                android:padding="@dimen/density_8_">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    app:srcCompat="@drawable/ic_promo" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/density_8_"
+                                    android:gravity="center"
+                                    android:text="@string/promo_n"
+                                    android:textSize="@dimen/text_14_" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/density_2"
+                        android:layout_marginLeft="@dimen/density_2"
+                        android:layout_marginTop="@dimen/density_8_"
+                        android:layout_marginEnd="@dimen/density_2"
+                        android:layout_marginRight="@dimen/density_2">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/density_2">
+
+                           <!-- <com.yyydjk.library.BannerLayout
+                                android:id="@+id/banner"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/density_200"
+                                android:background="@color/circle"
+                                app:autoPlayDuration="5000"
+                                app:indicatorMargin="10dp"
+                                app:indicatorPosition="rightTop"
+                                app:indicatorShape="oval"
+                                app:indicatorSpace="3dp"
+                                app:isAutoPlay="true"
+                                app:scrollDuration="600"
+                                app:selectedIndicatorColor="@color/colorPrimary"
+                                app:selectedIndicatorHeight="6dp"
+                                app:selectedIndicatorWidth="6dp"
+                                app:unSelectedIndicatorColor="#99ffffff"
+                                app:unSelectedIndicatorHeight="6dp"
+                                app:unSelectedIndicatorWidth="6dp" />-->
+
+                            <com.example.library.banner.BannerLayout
+                                android:id="@+id/recycler"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                app:autoPlaying="true"
+                                app:centerScale="1.3"
+                                app:itemSpace="20"
+                                app:moveSpeed="1.8"/>
+
+                            <Button
+                                android:visibility="gone"
+                                android:id="@+id/btn_lihat_semua"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/density_24"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="0dp"
+                                android:background="@drawable/custom_promo_bottom"
+                                android:paddingStart="@dimen/density_16"
+                                android:paddingLeft="@dimen/density_16"
+                                android:paddingEnd="@dimen/density_16"
+                                android:paddingRight="@dimen/density_16"
+                                android:text="@string/lihat"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_12_" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textSize="@dimen/text_14_"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

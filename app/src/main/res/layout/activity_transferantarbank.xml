@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_transferantarbank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".dashboard.beranda.transfer.AntarBank">
+
+    <TextView
+        android:id="@+id/judulTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/tv_transfer_antarbank2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/Ly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judulTransfer"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/kd_bank"
+            android:textSize="@dimen/text_16_"/>
+
+        <EditText
+            android:id="@+id/edKdBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_text"
+            android:clickable="true"
+            android:focusableInTouchMode="false"
+            android:hint="@string/kd_bank"
+            android:inputType="none"
+            android:textSize="@dimen/text_18_"></EditText>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_trans_ke_rekening"
+            android:textSize="@dimen/text_16_"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18">
+
+                <EditText
+                    android:id="@+id/edRekTujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_text"
+                    android:hint="@string/tv_trans_tujuan_rekening"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_18_">
+
+                    <requestFocus></requestFocus>
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.82">
+
+                <Button
+                    android:id="@+id/buttonDaftarRek"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/custom_button_small"
+                    android:drawableStart="@drawable/ic_restore_black_24dp"
+                    android:drawableLeft="@drawable/ic_restore_black_24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/nominal"
+            android:textSize="@dimen/text_16_"/>
+
+        <EditText
+            android:id="@+id/edNomTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_text"
+            android:hint="@string/masukkan_nominal"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="@dimen/text_18_"></EditText>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ly1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btCancel"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/density_8_"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_cancel"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/colorButtonNotPressed"/>
+
+        <Button
+            android:id="@+id/btnTransfer"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/density_8_"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_small"
+            android:gravity="center"
+            android:text="@string/transfer"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+    <!-- Error message -->
+
+    <TextView
+        android:id="@+id/tvErrorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/density_8_"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_14_"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

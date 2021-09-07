@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".dashboard.akun.Inbox">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textColor="@color/lgblue"
+        android:textSize="@dimen/text_18_"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:id="@+id/Scr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llbtnInbox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvJudul"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llbtnInbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/density_8_"
+            android:paddingRight="@dimen/density_8_">
+
+            <Button
+                android:id="@+id/buttonSMS"
+                android:drawableStart="@drawable/ic_inbox_sms"
+                android:drawableLeft="@drawable/ic_inbox_sms"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:onClick="ButtonClick"
+                android:text="@string/btnFwdSms"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/density_8_"
+            android:paddingStart="@dimen/density_8_">
+
+            <Button
+                style="@style/buttonStyle"
+                android:drawableLeft="@drawable/ic_inbox_share"
+                android:drawableStart="@drawable/ic_inbox_share"
+                android:id="@+id/buttonShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:onClick="ButtonClick"
+                android:text="@string/btnShare"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+           android:id="@+id/layoutpdf"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/density_8_"
+            android:paddingStart="@dimen/density_8_">
+
+            <Button
+                style="@style/buttonStyle"
+                android:drawableLeft="@drawable/ic_inbox_pdf"
+                android:drawableStart="@drawable/ic_inbox_pdf"
+                android:id="@+id/buttonPDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ButtonClick"
+                android:text="@string/btnPDF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

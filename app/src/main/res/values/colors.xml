@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#fb5e11</color>
+	<color name="colorPrimaryDark">#D34E0D</color>
+	<color name="colorAccent">#0c4606</color>
+
+	<color name="textColorPrimary">#FFFFFF</color>
+	<color name="windowBackground">#FFFFFF</color>
+	<color name="navigationBarColor">#000000</color>
+
+	<color name="white">#ffffffff</color>
+	<color name="black">#ff000000</color>
+	<color name="brown">#993300</color>
+	<color name="red">#990000</color>
+	<color name="lgred">#EF2D32</color>
+	<color name="orange">#FFA500</color>
+	<color name="lgblue">#0066B3</color>
+	<color name="abuabu">#D2D3D5</color>
+	<color name="ijotuakop">#00923F</color>
+	<color name="ijomudakop">#CFEA7F</color>
+	<color name="ijotuakop1">#005F29</color>
+	<color name="background">#eaeded</color>
+	<color name="circle">#f5f4f4</color>
+	<color name="circle_dark">#a6b698</color>
+	<color name="highlight">#f3f3f3</color>
+	<color name="highlightPressed">#dcdcdc</color>
+	<color name="colorButtonLight">#00923F</color>
+	<color name="colorButtonDark">#005F29</color>
+	<color name="colorButtonPressed">#FD712C</color>
+	<color name="colorButtonNotPressed">#fb5e11</color>
+
+	<!--ayik baru-->
+	<color name="blue_grey_500">#607D8B</color>
+	<color name="blue_grey_600">#546E7A</color>
+	<color name="blue_grey_700">#455A64</color>
+	<color name="blue_grey_800">#37474F</color>
+	<color name="blue_grey_900">#263238</color>
+	<color name="background_">#e1e1fd</color>
+
+	<color name="transparent_blue">#32393841</color>
+	<color name="trans">#33949292</color>
+
+</resources>

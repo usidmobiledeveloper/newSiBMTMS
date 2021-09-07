@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_info_biaya"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".dashboard.beranda.content.PromoActivity">
+
+    <ProgressBar
+        android:id="@+id/info_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:id="@+id/infobiaya_form"
+         android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:id="@+id/info_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgInfo"
+            android:layout_width="300dp"
+            android:visibility="gone"
+            android:layout_height="300dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="matrix"
+            android:maxHeight="100dp"
+            android:maxWidth="50dp"
+            app:srcCompat="@drawable/infobiaya9" />
+    </LinearLayout>
+</RelativeLayout>

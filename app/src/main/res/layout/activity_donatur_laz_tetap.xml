@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/density_16_"
+                tools:context=".dashboard.transaksi.donasi.DonaturLazTetapActivity">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/donasi"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/Ly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judulTransfer"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvJudul"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/jenis_donasi"
+                android:textSize="@dimen/text_16_"/>
+
+            <EditText
+                android:id="@+id/edJenisDonasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:hint="@string/pilih_donasi"
+                android:inputType="none"
+                android:onClick="onClickPulsa"
+                android:textSize="@dimen/text_16_"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/npwz"
+            android:textSize="@dimen/text_16_"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18">
+
+                <EditText
+                    android:id="@+id/edNPWZ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_text"
+                    android:hint="@string/masukkan_npwz"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_18_"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.82">
+
+                <Button
+                    android:id="@+id/buttonDaftarRek"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/custom_button_wide"
+                    android:drawableStart="@drawable/ic_restore_black_24dp"
+                    android:drawableLeft="@drawable/ic_restore_black_24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/nominal"
+            android:textSize="@dimen/text_16_"/>
+
+        <EditText
+            android:id="@+id/edNomDonasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_text"
+            android:hint="@string/masukkan_nominal"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="@dimen/text_18_"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ly1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btCancel"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/density_8_"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_cancel"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/colorButtonNotPressed"/>
+
+        <Button
+            android:id="@+id/btnDonasi"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/density_8_"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_small"
+            android:gravity="center"
+            android:text="@string/donasi"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+    <!-- Error message -->
+
+    <TextView
+        android:id="@+id/tvErrorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/density_8_"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_14_"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

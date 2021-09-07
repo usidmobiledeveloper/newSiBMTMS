@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pulsa_pembelian"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/e_toll"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/ijotuakop1"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/Sc1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnOK"
+        android:layout_below="@+id/tvJudul">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Ly1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/jenisvoucher"
+                    android:textSize="@dimen/text_16_" />
+
+                <EditText
+                    android:id="@+id/edOperator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_text"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/voucher"
+                    android:inputType="none"
+                    android:onClick="onClickPulsa"
+                    android:textSize="@dimen/text_16_" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Ly2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Ly1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/nominalvoucher"
+                    android:textSize="@dimen/text_16_" />
+
+                <EditText
+                    android:id="@+id/edNom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_text"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/nomi"
+                    android:inputType="none"
+                    android:onClick="onClickPulsa"
+                    android:textSize="@dimen/text_16_" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Ly3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Ly2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/no_kartu"
+                    android:textSize="@dimen/text_16_" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.18">
+
+                        <EditText
+                            android:id="@+id/edNoHp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_text"
+                            android:hint="@string/no_kartu"
+                            android:inputType="number"
+                            android:textSize="@dimen/text_16_" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.82">
+
+                        <Button
+                            android:id="@+id/buttonDaftarRek"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/custom_button_wide"
+                            android:drawableStart="@drawable/ic_restore_black_24dp"
+                            android:drawableLeft="@drawable/ic_restore_black_24dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnOK"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button_small"
+        android:gravity="center"
+        android:text="@string/pembelian"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

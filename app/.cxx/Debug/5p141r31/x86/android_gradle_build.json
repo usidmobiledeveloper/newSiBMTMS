@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "C:\\WORKSPACE\\M-BMT\\NewSiBMT\\Mobile BMT - MS\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\ANDROIDSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "C:\\WORKSPACE\\M-BMT\\NewSiBMT\\Mobile BMT - MS\\app\\.cxx\\Debug\\5p141r31\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\ANDROIDSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "C:\\WORKSPACE\\M-BMT\\NewSiBMT\\Mobile BMT - MS\\app\\.cxx\\Debug\\5p141r31\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "native-lib-Debug-x86": {
+      "buildCommandComponents": [
+        "C:\\ANDROIDSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "C:\\WORKSPACE\\M-BMT\\NewSiBMT\\Mobile BMT - MS\\app\\.cxx\\Debug\\5p141r31\\x86",
+        "native-lib"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "native-lib",
+      "output": "C:\\WORKSPACE\\M-BMT\\NewSiBMT\\Mobile BMT - MS\\app\\build\\intermediates\\cxx\\Debug\\5p141r31\\obj\\x86\\libnative-lib.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

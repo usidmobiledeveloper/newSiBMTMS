@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mobile_BMT_-_MS.iml" filepath="$PROJECT_DIR$/.idea/modules/Mobile_BMT_-_MS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Mobile_BMT_-_MS.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Mobile_BMT_-_MS.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/Mobile_BMT_-_MS.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/Mobile_BMT_-_MS.library.iml" />
+    </modules>
+  </component>
+</project>

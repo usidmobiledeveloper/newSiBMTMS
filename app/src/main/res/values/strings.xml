@@ -1,0 +1,541 @@
+<resources>
+
+    <string name="app_register">Registrasi</string>
+    <string name="app_aktifasi">Aktivasi</string>
+
+    <string name="app_login">Login</string>
+    <string name="app_info_notifications">Daftar Notifikasi</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="userid">userID</string>
+    <string name="username">username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="logout">Keluar</string>
+    <string name="oke">OK Simpan</string>
+    <string name="lanjut">LANJUT</string>
+    <string name="cancel">KEMBALI</string>
+    <string name="info">Info Saldo</string>
+    <string name="inforek">Info Rekening</string>
+    <string name="transfer">Transfer</string>
+    <string name="pembelian">Pembelian</string>
+    <string name="jenisvoucher">Jenis Voucher</string>
+    <string name="pembayaran">Pembayaran</string>
+    <string name="administrasi">Administrasi</string>
+    <string name="content">Content</string>
+    <string name="daftartrf">Daftar Transfer</string>
+    <string name="daftartrfab">Daftar Transfer Antar Bank</string>
+    <string name="daftarpulsa">Daftar Pulsa</string>
+    <string name="daftardonatur">Daftar Donatur</string>
+    <string name="daftarplnpra">Daftar PLN Pembelian</string>
+    <string name="daftarplnpasca">Daftar PLN Pembayaran</string>
+    <string name="daftarPDAM">Daftar PDAM Pembayaran</string>
+    <string name="daftarTELKOM">Daftar Telepon Pembayaran</string>
+    <string name="contact">Kontak</string>
+    <string name="alpanum">Ketik 6 digit</string>
+    <string name="passskrg">Password Sekarang</string>
+    <string name="passbaru">Password Baru</string>
+    <string name="passlagi">Ulangi Password Baru</string>
+    <string name="www">www.usid.co.id</string>
+    <string name="tentang">&#169;2016 PT. UGT System Integrator Developer\n
+    All rights Reserved\n
+    Untuk keterangan lebih lanjut, kunjungi www.usid.co.id</string>
+    <string name="tv_validasi_pass">Silahkan menentukan Kode Akses Anda:</string>
+    <string name="tv_validasi_pass_ulang">Konfirmasi ulang Kode Akses Anda:</string>
+    <string name="tv_regis_sn">KODE IMEI :</string>
+    <string name="tv_nokartu">No. Telepon : (misal: 081234567890)</string>
+    <string name="tv_regis_kartuatm">Masukkan No. Registrasi :</string>
+    <string name="tv_transfer_judul">Transfer Antar Rekening</string>
+    <string name="tv_transfer_antarbank">Transfer Antar Bank</string>
+    <string name="ForwardSMS">Kirim SMS</string>
+
+    <string name="tv_transfer_antarbank2">Rekening Bank Lain</string>
+    <string name="tv_trans_dari_rekening">Dari Rekening :</string>
+    <string name="tv_trans_ke_rekening">Ke Rekening :</string>
+    <string name="tv_trans_tujuan_rekening">Masukkan Rekening Tujuan</string>
+    <string name="nominal">Jumlah Nominal :</string>
+    <string name="nomi">Nominal</string>
+    <string name="cari">Cari :</string>
+    <string name="namapln">Nama</string>
+    <string name="nama">Masukkan Nama atau Rekening</string>
+    <string name="nodata">Tidak ada data tersimpan!</string>
+    <string name="masukkan_nominal">Masukkan Jumlah Nominal</string>
+    <string name="berita">Berita :</string>
+    <string name="kd_bank">Kode Bank</string>
+    <string name="simpanrek">Simpan Rekening</string>
+    <string name="simpannomor">Simpan Nomor HP</string>
+    <string name="simpannpwz">Simpan NPWZ</string>
+    <string name="masukkan_berita">Masukkan Isi Berita</string>
+    <string name="tv_trans_jumlahuang">Jumlah Uang :</string>
+    <string name="tv_trans_rp">Rupiah :</string>
+    <string name="hint_kdValidasi">Kode Validasi</string>
+    <string name="hint_norek">No. Rekening</string>
+    <string name="hint_nokartuatm">No. Registrasi</string>
+    <string name="hint_jumlah_uang">Jumlah Uang</string>
+    <string name="darirek">Dari Rek.</string>
+    <string name="kerek">Ke Rek.</string>
+    <string name="bank">Bank</string>
+    <string name="kebank">Ke Bank</string>
+    <string name="no_rek">No. Rek</string>
+    <string name="faktur">Faktur</string>
+    <string name="an">A.n</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="infonama">Nama/Info</string>
+    <string name="sn">SN</string>
+    <string name="beritaa">Berita</string>
+    <string name="infomutasi">Info Mutasi</string>
+    <string name="infosimpanan">Info Simpanan</string>
+    <string name="mdaberjangka">MDA Berjangka</string>
+    <string name="pembiayaan">Pembiayaan</string>
+    <string name="transantarrek">Transfer Antar Rekening</string>
+    <string name="transantarbmt">Transfer Antar BMT</string>
+    <string name="transferbank">Transfer Bank</string>
+    <string name="listrik">Listrik PLN</string>
+    <string name="pdam">PDAM</string>
+    <string name="telepon">Telepon</string>
+    <string name="teleponhp">Telepon/HP</string>
+    <string name="internet">Internet</string>
+    <string name="tvberbayar">TV Berlangganan</string>
+    <string name="tiket">Tiket</string>
+    <string name="pendidikan">Pendidikan</string>
+    <string name="asuransi">BPJS</string>
+    <string name="multifinance">Multi Finance</string>
+    <string name="donasi">Donasi</string>
+    <string name="kalkulator">Kalkulator Zakat</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="biaya">Informasi Biaya</string>
+    <string name="produk">Produk &amp; Promo</string>
+    <string name="lokasi">Lokasi Kantor Layanan</string>
+    <string name="laz">LAZ-BMT</string>
+    <string name="lkaf">LKaf-BMT</string>
+    <string name="tokenpln">Token PLN</string>
+    <string name="pulsaseluler">Pulsa Seluler</string>
+    <string name="gantipass">Ganti Password Login</string>
+    <string name="gantipin">Ganti PIN</string>
+    <string name="katasandilama">PIN Lama</string>
+    <string name="katasandibaru">PIN Baru</string>
+    <string name="katasandibaruulang">Ketik Ulang PIN Baru</string>
+    <string name="gantiemail">Ganti Email</string>
+    <string name="gantibahasa">Ganti Bahasa</string>
+    <string name="inbox">Inbox</string>
+    <string name="inboxdetail">Inbox Detail</string>
+    <string name="about">About</string>
+    <string name="callcenter">Call Center</string>
+    <string name="lokasikantor">Lokasi Kantor</string>
+    <string name="produkpromo">Produk dan Promo</string>
+    <string name="biaya2">Biaya-biaya</string>
+    <string name="jadwalsolat">Jadwal Sholat</string>
+    <string name="hitungzakat">Perhitungan Zakat</string>
+    <string name="hikmah">Hikmah</string>
+    <string name="trx5">5 Trx</string>
+    <string name="trx10">10 Trx</string>
+    <string name="trx20">20 Trx</string>
+    <string name="btnShare">SHARE</string>
+    <string name="btnPDF">Simpan PDF</string>
+    <string name="kirim">KIRIM</string>
+    <string name="btnFwdSms">Kirim SMS</string>
+
+    <string name="tgl_bayar">Tanggal Bayar</string>
+    <string name="hint_uangtunai">Tabungan atau sejenisnya</string>
+    <string name="hint_investasi">Saham, Deposito, atau sejenisnya</string>
+    <string name="z_uang">Uang Tunai dan Investasi</string>
+    <string name="jmluang">Jumlah Uang atau Investasi</string>
+    <string name="uangtunai">Uang Tunai</string>
+    <string name="investasi">Investasi</string>
+    <string name="hint_hutang">Hutang Pribadi</string>
+    <string name="pengurangzakat">Pengurang Zakat</string>
+    <string name="hutangpendek">Hutang Jangka Pendek</string>
+    <string name="kebutuhanpokok">Kebutuhan Pokok dan Riil</string>
+    <string name="hargaemas">Harga Emas Saat Ini (per gram)</string>
+    <string name="hint_kebutuhanpokok">Kebutuhan Pokok dan lain-lain</string>
+    <string name="hint_hargaemas">Harga emas dunia saat ini (gram)</string>
+    <string name="cek">Cek Online</string>
+
+    <string name="jenis_donasi">Jenis Donasi :</string>
+    <string name="npwz">NPWZ</string>
+    <string name="masukkan_npwz">Masukkan NPWZ</string>
+    <string name="donasi_tetap">Donasi Tetap</string>
+    <string name="pilih_donasi">Pilih Jenis Donasi</string>
+    <string-array name="donasi">
+        <item>Donatur Insiden</item>
+        <item>Donatur Tetap</item>
+    </string-array>
+
+    <string name="promo_">Promo</string>
+    <string name="produk_">Produk</string>
+
+    <string name="idpel1">ID Pel 1</string>
+    <string name="idpel2">ID Pel 2</string>
+    <string name="idpel3">ID Pel 3</string>
+    <string name="idpel">ID Pelanggan</string>
+    <string name="plnpasca">PLN Pascabayar</string>
+    <string name="plnpra">PLN Prabayar</string>
+    <string name="pulsa">Pulsa Seluler</string>
+    <string name="titikdua">: RP.</string>
+    <string name="titikdua2">:</string>
+    <string name="jmlperiode">Jml. Lembar</string>
+    <string name="jmllembar">Jml. Lembar</string>
+    <string name="jml_bulan">BL/TH</string>
+    <string name="rptag">RP TAG PLN</string>
+    <string name="adminbank">Admin Bank</string>
+    <string name="biayaadmin">Admin</string>
+    <string name="tv_transfer_sesama">Rekening Mobile BMT</string>
+    <string name="total">Total Bayar</string>
+    <string name="reff">Reff No.</string>
+    <string name="tarifdaya">Tarif/Daya</string>
+    <string name="nsm">No. Meter</string>
+    <string name="idpelnsm">No. Meter/ID Pelanggan</string>
+    <string name="operator">Pilih Penyedia Layanan</string>
+    <string name="prod">Produk</string>
+    <string name="tgl">Tanggal</string>
+    <string name="reff1">No. Reff1</string>
+    <string name="reff2">No. Reff2</string>
+    <string name="trxid2">TrxID</string>
+    <string name="nominalvoucher">Nominal Voucher</string>
+    <string name="nohp">Nomor Handphone</string>
+    <string name="hp">No. HP</string>
+    <string name="notelp">No.Telp/Speedy</string>
+    <string name="nopdam">No. PDAM</string>
+    <string name="area">Kode Area</string>
+    <string name="trxID">Transaksi ID</string>
+    <string name="tagihan">Tagihan</string>
+    <string name="admin">Admin</string>
+    <string name="bulan">Bulan</string>
+    <string name="setuju">SETUJU</string>
+    <string name="batal">BATAL</string>
+    <string-array name="telkom">
+        <item>Telkom/Speedy</item>
+        <item>Kartu Halo</item>
+        <item>Indovision</item>
+    </string-array>
+    <string name="defaultTelkom">Pilih Produk Telkom</string>
+    <string-array name="nomplnpra">
+        <item>20000</item>
+        <item>50000</item>
+        <item>100000</item>
+        <item>200000</item>
+        <item>500000</item>
+        <item>1000000</item>
+    </string-array>
+
+    <!-- URL TAIL ==================================================================================-->
+    <!--45131=======================================================================================-->
+    <!--BERANDA-->
+    <string name="urlCekSaldo">Va/sidwY30zLyfOZe+icdzMVM5k6SY+j</string>
+    <string name="urlInfoMutasi">Va/sidwY30zLyfOZe+icd8OAzUdMKvLl</string>
+    <string name="urlInfoMutasiPeriod">Va/sidwY30zLyfOZe+icdyRL9Bz8Uddyw81U/XQaJqA=</string>
+    <string name="urlInfoSimpanan">Va/sidwY30wAY6P8RwdLUpQGKNfWl5VYnqjtnHu5YYE=</string>
+    <string name="urlInfoPembiayaan">Va/sidwY30wAY6P8RwdLUl7vX9y2/f67X3NpE617IWY=</string>
+    <string name="urlInfoMDA">Va/sidwY30wAY6P8RwdLUrHB/KNNhkmR5UtwbQRqA+Y=</string>
+
+    <!--ANTARREK&VA-->
+    <string name="urlTransferinq">UFE1FKubxYmDxAo/ChNXTJy82cJyTJjV</string>
+    <string name="urlTransferexe">UFE1FKubxYlfIeWLcyl5NNyevpx5IVse</string>
+
+    <!--DONASI&TETAP-->
+    <string name="urlGetID">5FuaFiGJx+6wkknHzKEixg==</string>
+    <string name="urlLAZ">IzxA2yiQVP0s0NNC9DaTJA==</string>
+    <string name="urlLKAF">IzxA2yiQVP34W1DAH9g45w==</string>
+    <string name="urlInfaq">ik9AbO+S0J1TSr87d9opNA==</string>
+
+
+    <!--KANTORLAYANAN-->
+    <string name="urlKantorLayanan">oWQxkJ16P8KHqCx3Sb35gqHS2R0y6MCC</string>
+
+    <!--<string name="urlKantorLayanan">oWQxkJ16P8KHqCx3Sb35gqHS2R0y6MCC</string>
+    <string name="urlAppVersionCek">oWQxkJ16P8IfUoz1aJKQ1t/rYY0iTSLNgt8GJ6KUj/I=</string>-->
+
+    <string name="urlinquiry">K+typtLdJP6TsT56GUBw0Q==</string>
+    <string name="urlinquirypulsa">K+typtLdJP4Z6dAIXwokuBaH47LTsYM/</string>
+    <string name="urllistproduk">Ia92BtZToktz7yuP/GSfiw==</string>
+    <string name="urlLogin">IL78wXC0FeU=</string>
+    <!--<string name="urlInfoPromo2">oWQxkJ16P8JTRlnlmmuj23QfbUAJ07pGIKTxBBeGJv4t2IXKprhNQfV0Imk9SGnyuqXz2gFiRuw=</string>
+    <string name="urlInfoPromo">oWQxkJ16P8IrV9qHO17pTvb9KeYBxt5AdDoHbkIxq4c=</string>-->
+
+    <string name="urlGetBank">UFE1FKubxYkse12eLPtXyAYAg4KAA/5b</string>
+    <string name="urlInqBank">UFE1FKubxYm/mu2dZoeY6y7WzrIhJtOj</string>
+    <string name="urlPayBank">UFE1FKubxYnZd5Y9iIGYq6oBMCPwPmvE</string>
+    <string name="urlStatusTrf">UFE1FKubxYl6Fjm2eXZISCEiXmcKu2yT</string>
+    <!-- <string name="urlCekSaldoAnggota">Va/sidwY30zLyfOZe+icd9HhaRZoxQBYoEANh/ua28U=</string>
+    <string name="urlCekListSaldoAnggota">Va/sidwY30zLyfOZe+icd9J5fKrzFJHcsavvi16SW+LnWNzd7Kysfg==</string>
+    <string name="urlCekMutasiSaldoAnggota">Va/sidwY30zLyfOZe+icd/Po7urRa0nmoOD/Ns3Qb72rEhsI57c1xA==</string>-->
+
+
+    <string name="urlSetAppId">oWQxkJ16P8LcKK6YTrBdHGtKldMlJDzA</string>
+    <!-- <string name="urlSetTokenId">oWQxkJ16P8JoR2Dk3Ao78O/vDC074xvQjUQf07r3VJU=</string>-->
+    <string name="urlSetTokenId2">oWQxkJ16P8JoR2Dk3Ao78COOY9hwcK8+K/e3Lu6FVS4=</string>
+    <string name="urlGetTokenId">oWQxkJ16P8Iy+u/WetbS2ZJwAnPdRzdzxZR9Cvx6F8E=</string>
+    <string name="urlGetRiwayat">Va/sidwY30wfZzpsP5YTCeFlAxTeFJUG</string>
+    <string name="urlCariRiwayat">Va/sidwY30yhPswPPaG5s16yjSjd9BEGjkVpibgh2tQ=</string>
+    <string name="getDaftarNorek">UFE1FKubxYlOwjCVFahoFg==</string>
+    <string name="urlCekMutasiPembiayaan">Va/sidwY30zLyfOZe+icdyRL9Bz8UddyE/TJPZ71wOdy+2YPStpbzg==</string>
+    <string name="urlCekMutasiSimpanan">Va/sidwY30zLyfOZe+icd1rBqaeoGNe/370eF9MsvBI=</string>
+    <string name="urlCekMutasiSimpananPeriod">Va/sidwY30zLyfOZe+icd1rBqaeoGNe/YE0qE43PTl8=</string>
+
+    <string name="urlcekInfoData">Va/sidwY30zLyfOZe+icd3OKBw5unJN7b5L3EFkedT8=</string>
+    <string name="urlgetVA">Va/sidwY30wfZzpsP5YTCYdI5omQSiJI</string>
+
+    <string name="urlGetRekening">Va/sidwY30wfZzpsP5YTCfm2j2GeZzGfIwjXbvsUC8Y=</string>
+    <string name="urlGetVA">Va/sidwY30wfZzpsP5YTCYdI5omQSiJI</string>
+
+
+    <!-- V2-->
+    <string name="urlRegistrasi2">JFw9iM5LzANTnC2fpoTQ7w==</string>
+    <string name="urlAktivasi2">LHbf+r0QonReK5ldeD6iJnOeE9ZRAUfd</string>
+    <string name="urlGantiPIN2">Yh5MU9mhJlYwu0FwKUTAvQ==</string>
+    <string name="urlVerifikasiPIN">rn3V+zk2jBUgfdXUNByn2ttRDFGWq08R</string>
+    <!--============================================================================================-->
+
+    <!--3388========================================================================================-->
+    <!--<string name="urlInfoBiaya">bnhyzvkHvYOycqtNt9zdLuIdKEflBmNq</string>-->
+    <string name="urlInfoSplash">Y37lQhsPFIg=</string>
+    <!--============================================================================================-->
+
+    <!--PPOB========================================================================================-->
+    <string name="urlCekStatusProd">8kNrAMFsFcFGxPap6SvNTCj3gAvue6tu</string>
+    <string name="urlListPulsa">UcG7SjJL87gpgVVtH63QNYlJ34z0vt1Xew+NMOBhEHc=</string>
+    <string name="urlListProd">UcG7SjJL87h2DbkZuYDLVw==</string>
+    <string name="urlLoginPPOB">pHSAR0bvixAgGeBpxNAuOw==</string>
+    <!--asli-->
+    <string name="urlInqPPOB">K+typtLdJP6TsT56GUBw0Q==</string>
+    <string name="urlInqBPJS">K+typtLdJP4zbp/27MLVEepM4XeITE5I</string>
+    <string name="urlPayBPJS">WDB57a53k70sbI/QNWh4BxUuOvXRHrIV</string>
+    <string name="urlInqPDAM">K+typtLdJP6wkK0utjpNehPB1PVa2PsV</string>
+    <string name="urlPayPPOB">WDB57a53k73PmyvaY0QsbQ==</string>
+    <string name="urlPayPDAM">=WDB57a53k72yIoXDCijUwQLjwqukXQ9i</string>
+    <string name="urlPulsa">8Y8sA9grPqfcEizeX7NXKA==</string>
+    <!--asli-->
+    <string name="urlListProdEToll">UcG7SjJL87gpgVVtH63QNf8Td5x7bXQi1U7bMIUJsMM=</string>
+    <string name="urlEToll">sR4jPYu4MEjKgPn3og4dcw==</string>
+    <string name="urlListProdOVO">UcG7SjJL87gpgVVtH63QNZ/XUCVLgezavm76Yzz8O88=</string>
+
+
+    <string name="noSMSGateway">+628111010088</string>
+
+    <string name="status">Status</string>
+
+    <string name="title_pre_2">B. KETENTUAN REGISTRASI</string>
+    <string name="title_pre_3">C. PERSYARATAN INSTALASI</string>
+
+    <string name="text_pre_1">adalah fasilitas layanan transaksi yang dapat diakses secara langsung oleh anggota via smartphone dengan menggunakan media jaringan Internet yang dikombinasikan dengan media SMS (Short Message Services).</string>
+
+    <string name="text_pre_2_7">Anggota dapat melakukan transaksi financial setelah merubah PIN standard.</string>
+
+    <string name="satu">1.</string>
+    <string name="dua">2.</string>
+    <string name="tiga">3.</string>
+    <string name="empat">4.</string>
+    <string name="lima">5.</string>
+    <string name="enam">6.</string>
+    <string name="tujuh">7.</string>
+
+    <string name="text_pre_3_1">Hanya dapat digunakan pada handphone OS berbasis Android.</string>
+    <string name="text_pre_3_2">Instalasi di SIM 1 jika SIM Card(Nomor Handphone) nya lebih dari 1.</string>
+    <string name="text_pre_3_3">Pastikan memiliki paket data, memory kosong dan pulsa minimal 1000 tersedia untuk proses aktivasi.</string>
+
+    <string name="timer">00:00</string>
+    <string name="mohon">Mohon tunggu dalam</string>
+    <string name="kdaktifasi">Kode aktivasi</string>
+    <string name="masukkan">Masukkan Kode Aktivasi</string>
+    <string name="kodeverifikasi">Kode verifikasi telah dikirimkan melalui SMS ke</string>
+    <string name="aktivasi">AKTIVASI</string>
+    <string name="tlp">No. Handphone</string>
+    <string name="REGISTRASI">REGISTRASI</string>
+    <string name="reg2">Kami akan mengirimkan kode verifikasi melalui SMS</string>
+
+    <string name="Home">Beranda</string>
+    <string name="Transaction">Transaksi</string>
+    <string name="Account">Akun</string>
+
+    <string name="contact_us">Hubungi kami untuk kepastian transaksi anda :</string>
+
+    <string name="ganti_pin">Ganti PIN</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="notif">Notifikasi</string>
+    <string name="favorit">Favorit</string>
+    <string name="lokasi2">Kantor</string>
+    <string name="produk2">Produk</string>
+    <string name="promo">Promo</string>
+    <string name="simpanan">Simpanan</string>
+    <string name="saldo">Saldo</string>
+    <string name="mutasi">Mutasi</string>
+    <string name="mda">MDA Berjangka</string>
+    <string name="information">Informasi</string>
+    <string name="trf_bmt">Antar BMT</string>
+    <string name="trf_bank">Antar Bank</string>
+    <string name="token_pln">Token PLN</string>
+    <string name="multi">Multifinance</string>
+    <string name="tv">Televisi</string>
+    <string name="trf_rek">Antar Rekening</string>
+    <string name="telp">Telepon/HP</string>
+    <string name="lihat">Lihat Semua Promo</string>
+
+    <string name="wa">Whatsapp</string>
+    <string name="sms">Pesan Singkat</string>
+
+    <!-- ayik baru-->
+    <string name="quickstart_message">Messages sent to the topic will be received.</string>
+    <string name="subscribe_to_weather">Subscribe To Global</string>
+    <string name="log_token">Log Token</string>
+    <string name="msg_subscribed">Subscribed to global topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="msg_subscribe_failed">Failed to subscribe to global topic</string>
+    <string name="fcm_message">FCM Message</string>
+
+    <string name="masukkan_kode_aktivasi">SILAHKAN MEMASUKKAN KODE AKTIVASI YANG TELAH DIKIRIMKAN MELALUI SMS</string>
+    <string name="proses_aktivasi">Memproses Aktivasi</string>
+    <string name="menghubung_server">Tunggu…sedang menghubungkan ke server</string>
+    <string name="aktivasi_sukses">AKTIVASI SUKSES</string>
+    <string name="pin_awal">Aktivasi berhasil dilakukan. PIN awal anda 123456</string>
+    <string name="mual_ulang_registrasi">Silahkan mulai ulang dari awal proses registrasi!</string>
+    <string name="konfirmasi">Konfirmasi</string>
+    <string name="batalkan_proses">Anda yakin untuk membatalkan proses?</string>
+    <string name="proses_aktivasi_">Mohon tunggu…sedang memproses aktivasi</string>
+    <string name="maasukkan_simcard">Masukkan SIM CARD!</string>
+    <string name="memproses">Memproses</string>
+
+    <string name="update_aplikasi">Update Aplikasi</string>
+    <string name="tidak_ada_kartu">TIDAK ADA KARTU</string>
+    <string name="foto_akun">Foto Akun</string>
+    <string name="ambil_foro">Ambil Foto</string>
+    <string name="galeri">Galeri</string>
+    <string name="back_dua_kali">Klik tombol kembali lagi untuk keluar</string>
+    <string name="memproses_foro">Memproses Foto…</string>
+    <string name="smsAktivasi">Mobile BMT AKTIVASI</string>
+
+    <string name="ganti_pin_n">Ganti PIN</string>
+    <string name="inbox_n">Inbox</string>
+    <string name="bantuan_n">Bantuan</string>
+    <string name="tentang_n">Tentang</string>
+    <string name="promo_n">Promo</string>
+    <string name="kantor_n">Kantor</string>
+
+    <!--GANTI VARIABLE  -->
+
+    <string name="urlAppVersionCek">oWQxkJ16P8IfUoz1aJKQ1p+WW5y8kwHf</string>
+    <string name="urlInfoPromo">oWQxkJ16P8IrV9qHO17pTrhcLHkfQI0P</string>
+    <string name="urlInfoPromo2">oWQxkJ16P8JTRlnlmmuj23QfbUAJ07pGIKTxBBeGJv4HguAVwKaa7Q==</string>
+    <!-- <string name="urlInfoProduk">oWQxkJ16P8IrV9qHO17pTqmnKlmlaye+</string>-->
+
+    <string name="appurlnameUpper">MobileBMTMS</string>
+    <string name="appurlnameLower">mobilebmtms</string>
+
+    <string name="app_name">Mobile BMT-MS</string>
+    <string name="nama_instansi">BMT Mandiri Sejahtera</string>
+    <string name="pin_mobilebmt">PIN Mobile BMT-MS</string>
+    <string name="path1">/M-BMT</string>
+    <string name="path2">/M-BMT/</string>
+    <string name="watermark">M-BMT - BMT Mandiri Sejahtera</string>
+    <string name="sms_start">MobileBMT</string>
+    <string name="gunakan_kode_rahasia">- Gunakan kode RAHASIA</string>
+    <string name="mohon_update_aplikasi">Mohon update Aplikasi Mobile BMT-MS Versi</string>
+    <string name="cs">Call Center Mobile BMT-MS 081331902576</string>
+    <string name="call_center">081331902576</string>
+    <string name="no_contact">+6281331902576</string>
+    <string name="no_contact_message">+6281331902576</string>
+    <string name="jam_layanan">Jam Layanan dan keluhan pelanggan pada Hari kerja BMT Mandiri Sejahtera.
+        Anda yakin untuk menghubungi call center 081331902576 sekarang?</string>
+
+    <string name="pre_regsitrasi">Mobile BMT-MS</string>
+    <string name="validasi_bawah">Aplikasi Mobile BMT-MS ini digunakan untuk kenyamanan bertransaksi.
+        Satu akun tabungan Tidak dapat diaktifkan pada beberapa smartphone.</string>
+    <string name="validasi_atas">Setiap kali anda masuk ke menu Mobile BMT-MS, anda memerlukan Kode Akses ini.
+        Kode Akses terdiri dari 6 digit alfanumerik (minimal salah satunya huruf dan angka).</string>
+    <string name="registrasi_atas">Registrasi Mobile BMT-MS untuk Anggota BMT Mandiri Sejahtera.
+        Proses validasi diperlukan untuk mengaktifkan aplikasi ini. (Tindakan ini hanya sekali proses,
+        jadi pastikan data sudah benar)</string>
+    <string name="kodebmt">0999</string>
+    <string name="text_pre_registrasi">Registrasi Mobile BMT-MS untuk Anggota BMT Mandiri Sejahtera.
+        Proses validasi diperlukan untuk mengaktifkan aplikasi ini. (Tindakan ini hanya sekali proses,
+        jadi pastikan data sudah benar)</string>
+    <string name="text_pre_2_2">Anggota harus mengisi formulir registrasi Mobile BMT-MS di kantor layanan dengan
+        menyerahkan copy kartu identitas.</string>
+    <string name="text_pre_2_3">Fasilitas Mobile BMT-MS bisa dilakukan bagi anggota yang memiliki SIM Card Operator
+        Selular tertentu dan menginstall aplikasi melalui Google Play Store. </string>
+    <string name="text_pre_2_4">Registrasi Mobile BMT-MS dengan cara memasukkan nomor registrasi yang di dapat dari
+        customer service kantor layanan BMT Mandiri Sejahtera. </string>
+    <string name="text_pre_2_5">PlN standard Mobile BMT-MS didapatkan setelah proses aktivasi berhasil.</string>
+    <string name="text_pre_2_6">PIN standard Mobile BMT-MS hanya bisa dilakukan untuk cek saldo dan cek mutasi terakhir.</string>
+    <string name="title_pre_1">A. DEFINISI Mobile BMT-MS</string>
+    <string name="text_pre_2_1">Setiap anggota yang memiliki rekening tabungan umum syariah berhak untuk menggunakan dan
+        memperoleh fasilitas Mobile BMT-MS. </string>
+    <string name="default_notification_channel_id" translatable="false">mobilebmtmandirisejahtera01</string>
+    <string name="default_notification_channel_name" translatable="true">Mobile BMT-MS</string>
+    <string name="infobiaya">infobiayamandirisejahtera.png</string>
+
+    <string name="app_title_bar">Mobile BMT-MS</string>
+    <string name="db_notification">mobilebmtmandirisejahteranotifications</string>
+    <string name="no_peserta">No. Peserta</string>
+    <string name="e_toll">E-Toll</string>
+    <string name="no_kartu">No. Kartu</string>
+    <string name="voucher">Voucher</string>
+    <string name="daftar_bpjs">Daftar BPJS</string>
+    <string name="simpan_no_kartu">Simpan No. Kartu</string>
+    <string name="bpjs">BPJS</string>
+
+    <string name="uang">Uang Elektronik</string>
+    <string name="no_hp">No. HP</string>
+    <string name="simpan_no_hp">Simpan No. Handphone</string>
+    <string name="daftar_etoll">Daftar E-Toll</string>
+    <string name="daftar_uang">Daftar Uang Elektronik</string>
+
+    <string name="daftarMultifinance">Daftar Multifinance Pembayaran</string>
+    <string name="simpankeinbox">Simpan Ke Inbox</string>
+    <string name="mtrl_picker_save" description="Confirms the selection [CHAR_LIMIT=12]">Konfirmasi</string>
+    <!-- UNUSED-->
+    <!-- LAMA PRO -->
+    <!--<string name="urlAppVersionCek">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswNQ6lWe4I3RPDPpYvlUr3nSr90+qlrQH3xT1q7bgJZSRWLOmjTSVG1n</string>-->
+    <!--<string name="urlpembayaran">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswOGjaBg7fced/TkpXDjGOLr9N36x1G1hdw=</string>-->
+    <!--<string name="urlinquiry">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswOGjaBg7fced2HZWNAHwA5oSyP/iVkAr+s=</string>-->
+    <!--<string name="urlpembelian">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswOGjaBg7fced/TkpXDjGOLrULEwA1iKue4=</string>-->
+    <!--<string name="urlexecutepulsa">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswOGjaBg7fced5ct0o3bZapX0aD/M/6K4smc5En2k3MpaA==</string>-->
+    <!--<string name="urlinquirypulsa">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswOGjaBg7fced2HZWNAHwA5oPbLD/zGHJpifNtTyG6UYsw==</string>-->
+    <!--<string name="urllistproduk">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswOGjaBg7fced6dFmUiT9AHqt/cvPV6jbPo=</string>-->
+    <!--<string name="urlCekSaldo">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswMDyQEg6l/f16spo+hufvnt1+Smgm30kHw+Tcte791Msg==</string>-->
+    <!--<string name="urlInfoMutasi">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswMDyQEg6l/f16spo+hufvntHZVMGfmTLmxERQDN3MHq8Q==</string>-->
+    <!--<string name="urlInfoPembiayaan">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswMDyQEg6l/f16spo+hufvntTfQ2fcntRmQ7uSUGoK3O9RUcDZqORBUC</string>-->
+    <!--<string name="urlInfoMDA">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswMDyQEg6l/f16spo+hufvntTfQ2fcntRmSMsdSbYQ8/UKmI2FZRhzqU</string>-->
+    <!--<string name="urlTransferinq">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswNG6wpBCvcjxgx5H6R1uuCQWCMIRSdJMxU60nXW13szJQ==</string>-->
+    <!--<string name="urlTransferexe">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswNG6wpBCvcjxgx5H6R1uuCQdcJ2XjMWL83QXjQHHv2SUw==</string>-->
+    <!--<string name="urlLAZ">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswPAVrHGDpJu74+u3x9uC+4gJTf04R9Gx6M=</string>-->
+    <!--<string name="urlLKAF">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswPAVrHGDpJu7yVqq/9R1rqQfAonER0HItA=</string>-->
+    <!--<string name="urlRegistrasi">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswNfPu7MFsApyMkRvEgy80LguBWW7tPI3l4=</string>-->
+    <!--<string name="urlGantiPIN">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswNfPu7MFsApyP0MVYnIISNMN8Y/ZMHCu1Q=</string>-->
+    <!--<string name="urlInfoBiaya">BE1EhL/PUxG6W4uHZ7Oe7W/bTkXldq+VhCoAcUJZouAJa8IbSwnAZEML7X/3Z2lByheEhIuYkqTC9A/BbICSQQ==</string>-->
+    <!--<string name="urlInfoSplash">BE1EhL/PUxG6W4uHZ7Oe7W/bTkXldq+VhCoAcUJZouAJa8IbSwnAZEA0JJWJLPTY</string>-->
+    <!--<string name="urlKantorLayanan">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMI5FTE5+hTswNQ6lWe4I3RPJrAkjzj7qOYahiIE/J12sa3zx4q05N75Q==</string>-->
+    <!--<string name="urlLogin">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMIqDaNpst7CG2UsJmrZWV1yuckL5I3cDKV</string>-->
+    <!--<string name="salt1">EcqngPkp5dOBbYkX7mBsZw==</string>-->
+    <!--<string name="salt2">EcqngPkp5dNy9Jg1U9mk7A==</string>-->
+    <!--<string name="appscode2">mobileugttigadelapan</string>-->
+    <!--<string name="urlh2h">dmv8zYH1xv0MdIPzGzF0E7ezO/Crl6zq3DvRmoU5BGhP2JSiM33yGQ==</string>-->
+    <!--<string name="urlh2h">BE1EhL/PUxFx6cCKVXztyCOBt56BI6xuWmA6t802H4zYedOUfa1zxw==</string>-->
+
+    <!--================================================================================================-->
+
+    <!-- <string name="urlLAZ">BE1EhL/PUxF+dup3TyZ21Fu3uYMBEzAoBNiImroTBKmaIhfPDN9GYuBkz5quqHx51tRU7DxKOr0=</string>
+   <string name="urlLKAF">BE1EhL/PUxF+dup3TyZ21Fu3uYMBEzAoBNiImroTBKmaIhfPDN9GYuBkz5quqHx5Y+Q4Pw7ORXI=</string>-->
+    <!--<string name="urlinquirypulsa">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMIqDaNpst7CG2UsJmrZWV1yp40iQseCyO36ArP4hMYFlOifCatltSZWg==</string>-->
+    <!--<string name="urlinquiry">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMIqDaNpst7CG2UsJmrZWV1yp40iQseCyO3RdJfNa1rbZ4=</string>-->
+    <!-- <string name="urlKantorLayanan">BE1EhL/PUxF+dup3TyZ21Fu3uYMBEzAoBNiImroTBKmaIhfPDN9GYhsDzh1DkUQ+H379KhHh7RX2/81j/5oBdg==</string>
+    -->
+    <!--<string name="urlInfoPromo">BE1EhL/PUxG6W4uHZ7Oe7U8Tu094ZxMIqDaNpst7CG2UsJmrZWV1ykOpQ3EbqUOpZvVdUOldbYB+1aj0M5Vc+XRyysUjz+6Z</string>-->
+
+    <string name="titikdua3">Rp</string>
+    <string name="titikdua4">: </string>
+    <string name="verifikasi_pin">Verifikasi PIN</string>
+    <string name="ubah_pin">Ubah PIN</string>
+
+</resources>

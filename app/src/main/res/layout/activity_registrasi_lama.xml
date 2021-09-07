@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.usid.mobilebmt.mandirisejahtera.registrasi.RegistrasiLamaActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:gravity="center_horizontal"
+        android:text="@string/validasi_bawah"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_12_"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/registrasi_atas"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16_"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv_regis_kartuatm"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16_"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ednokartuatm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_nokartuatm"
+            android:inputType="number"
+            android:labelFor="@+id/edPass"
+            android:textSize="@dimen/text_18_"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btOkRegistrasi"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="100dp"
+        android:height="37dp"
+        android:background="@drawable/custom_button_small"
+        android:gravity="center"
+        android:onClick="ButtonClick"
+        android:text="@string/lanjut"
+        android:textColor="@color/white"/>
+    <!-- Error message -->
+
+    <TextView
+        android:id="@+id/tvRegister_errorValidasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btOkRegistrasi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_16_"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

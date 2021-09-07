@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_plnpembayaran"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.transaksi.pembayaran.PLNpembayaran">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/plnpasca"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/ijotuakop1"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/Ly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18">
+
+            <EditText
+                android:id="@+id/edIdPel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text"
+                android:hint="@string/idpel"
+                android:inputType="number"
+                android:textSize="@dimen/text_16_"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.82">
+
+            <Button
+                android:id="@+id/buttonDaftarRek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_button_wide"
+                android:drawableStart="@drawable/ic_restore_black_24dp"
+                android:drawableLeft="@drawable/ic_restore_black_24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_lanjut"
+        android:layout_below="@+id/Ly1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button_small"
+        android:gravity="center"
+        android:text="@string/lanjut"
+        android:textColor="@android:color/white"/>
+
+    <ScrollView
+        android:id="@+id/Scr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnProsesPasca"
+        android:layout_below="@+id/btn_lanjut">
+
+        <LinearLayout
+            android:id="@+id/mKontenStruk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnProsesPasca"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button_small"
+        android:gravity="center"
+        android:text="@string/pembayaran"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

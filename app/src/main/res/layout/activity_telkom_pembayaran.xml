@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_telkom_pembayaran"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.transaksi.pembayaran.TelkomPembayaran">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/telepon"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/ijotuakop1"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvJudul"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="@dimen/text_16_"/>
+
+    <LinearLayout
+        android:id="@+id/Ly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/output"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18">
+
+            <EditText
+                android:id="@+id/edIdPelNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:background="@drawable/bg_text"
+                android:hint="@string/idpel"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textSize="@dimen/text_16_"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.82">
+
+            <Button
+                android:id="@+id/buttonDaftarRek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_wide"
+                android:drawableStart="@drawable/ic_restore_black_24dp"
+                android:drawableLeft="@drawable/ic_restore_black_24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_lanjut"
+        android:layout_below="@+id/Ly1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button_small"
+        android:gravity="center"
+        android:text="@string/lanjut"
+        android:textColor="@android:color/white"/>
+
+    <ScrollView
+        android:id="@+id/Scr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnProses"
+        android:layout_below="@+id/btn_lanjut">
+
+        <LinearLayout
+            android:id="@+id/mKontenStruk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnProses"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button_small"
+        android:gravity="center"
+        android:text="@string/pembayaran"
+        android:textColor="@color/white"/>
+</RelativeLayout>

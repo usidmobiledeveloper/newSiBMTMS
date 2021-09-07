@@ -1,0 +1,1 @@
+C:\WORKSPACE\M-BMT\NewSiBMT\Mobile BMT - MS\app\build\intermediates\cmake\debug\obj\x86

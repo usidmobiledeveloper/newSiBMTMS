@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_new_scan">
+
+    <!--  set custom layout for scanner-->
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_scanner_layout="@layout/custom_scanner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/switch_flashlight"
+            android:layout_width="0dp"
+            android:drawableLeft="@drawable/ic_flash_off"
+            android:drawableStart="@drawable/ic_flash_off"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/custom_small_button_ligth"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:text="FLASH OFF" />
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/qrprofile"
+            android:textColor="@color/white"
+            android:layout_weight="2"
+            android:drawableRight="@drawable/ic_qr"
+            android:drawableEnd="@drawable/ic_qr"
+            android:background="@drawable/custom_button_small"
+            android:text="Lihat QR Profile"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

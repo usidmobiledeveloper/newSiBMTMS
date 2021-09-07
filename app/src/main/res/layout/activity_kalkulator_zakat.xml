@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kalkulator_zakat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".dashboard.beranda.content.KalkulatorZakat">
+
+    <TextView
+        android:id="@+id/textViewJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/z_uang"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/ijotuakop1"
+        android:textSize="@dimen/text_22_"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:id="@+id/linearLayout23"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lyBawah"
+        android:layout_below="@+id/textViewJudul"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jmluang"
+                android:textColor="@color/ijotuakop1"
+                android:textSize="@dimen/text_20_"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/uangtunai"
+                android:textColor="@color/ijotuakop"
+                android:textSize="@dimen/text_18_"/>
+
+            <EditText
+                android:id="@+id/edUangTunai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text"
+                android:hint="@string/hint_uangtunai"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18_">
+
+                <requestFocus>
+                </requestFocus>
+            </EditText>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/investasi"
+                android:textColor="@color/ijotuakop"
+                android:textSize="@dimen/text_18_"/>
+
+            <EditText
+                android:id="@+id/edInvestasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text"
+                android:hint="@string/hint_investasi"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18_">
+            </EditText>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/pengurangzakat"
+                android:textColor="@color/ijotuakop1"
+                android:textSize="@dimen/text_20_"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/hutangpendek"
+                android:textColor="@color/ijotuakop"
+                android:textSize="@dimen/text_18_"/>
+
+            <EditText
+                android:id="@+id/edHutang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text"
+                android:hint="@string/hint_hutang"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18_">
+            </EditText>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/kebutuhanpokok"
+                android:textColor="@color/ijotuakop"
+                android:textSize="@dimen/text_18_"/>
+
+            <EditText
+                android:id="@+id/edKebutuhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text"
+                android:hint="@string/hint_kebutuhanpokok"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18_">
+            </EditText>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/hargaemas"
+                android:textColor="@color/ijotuakop1"
+                android:textSize="@dimen/text_20_"
+                android:textStyle="bold|italic"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edHargaEmas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/buttonCek"
+                    android:layout_toStartOf="@+id/buttonCek"
+                    android:background="@drawable/bg_text"
+                    android:hint="@string/hint_hargaemas"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18_">
+                </EditText>
+
+                <Button
+                    android:id="@+id/buttonCek"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/edHargaEmas"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/edHargaEmas"
+                    android:background="@drawable/custom_button_wide"
+                    android:drawableLeft="@drawable/ic_restore_black_24dp"
+                    android:drawableStart="@drawable/ic_restore_black_24dp"
+                    android:onClick="onClick"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lyBawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnHitung"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_button_small"
+            android:onClick="onClick"
+            android:text="@string/hitungzakat"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</RelativeLayout>

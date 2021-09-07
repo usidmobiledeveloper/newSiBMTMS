@@ -1,0 +1,7 @@
+Executable : C:\ANDROIDSDK\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+C:\WORKSPACE\M-BMT\NewSiBMT\Mobile BMT - MS\app\.cxx\cmake\debug\x86
+native-lib
+jvmArgs : 
+
